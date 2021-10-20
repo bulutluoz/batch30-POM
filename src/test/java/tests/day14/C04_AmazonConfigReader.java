@@ -21,6 +21,8 @@ public class C04_AmazonConfigReader extends TestBase {
         // sonuc sayisini yazdirin ve sonuc yazisinin nutella icerdigini test edin
         System.out.println(amazonPage.sonucYazisiElementi.getText());
 
-        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains(ConfigReader.getProperty("amazonArananKelime")));
+        Assert.
+                assertTrue(amazonPage.sonucYazisiElementi.getText().
+                contains(ConfigReader.getProperty("amazonArananKelime")));
     }
 }
