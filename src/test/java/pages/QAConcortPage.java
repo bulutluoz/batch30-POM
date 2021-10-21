@@ -55,7 +55,32 @@ public class QAConcortPage {
     @FindBy(xpath="//button[@class='btn btn-primary']")
     public WebElement addHotelAllertOk;
 
+    @FindBy(partialLinkText = "Hotel Rooms")
+    public WebElement hotelRoomsLinki;
 
+    @FindBy(xpath ="//span[text()='Add Hotelroom ']")
+    public WebElement addHotelRoomButonu;
+
+    @FindBy(id="IDHotel")
+    public WebElement addRoomIdDropdown;
+
+    @FindBy(id="IDGroupRoomType")
+    public WebElement addRoomType;
+
+    @FindBy(id="btnSubmit")
+    public WebElement addRoomSaveButonu;
+
+    @FindBy(xpath = "//div[@class='bootbox-body']")
+    public WebElement addRoomSuccessfulYazisi;
+
+    @FindBy(xpath = "//button[@class='btn btn-primary']")
+    public WebElement addRoomAllertOkButonu;
+
+    @FindBy(linkText = "Hotelrooms")
+    public WebElement addroomHotelRoomsLinki;
+
+    @FindBy(xpath ="//span[text()='List Of Hotelrooms']")
+    public WebElement addRoomHotelRoomListyazisi;
 
 
 
