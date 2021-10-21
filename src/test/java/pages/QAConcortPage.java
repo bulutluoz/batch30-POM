@@ -43,6 +43,22 @@ public class QAConcortPage {
     @FindBy(id="Code")
     public WebElement addHotelCodeKutusu;
 
+    @FindBy(id="IDGroup")
+    public WebElement addHotelDropdown;
+
+    @FindBy(id="btnSubmit")
+    public WebElement addHotelSave;
+
+    @FindBy(xpath="//div[@class='bootbox-body']")
+    public WebElement addHotelSuccesfullYazisi;
+
+    @FindBy(xpath="//button[@class='btn btn-primary']")
+    public WebElement addHotelAllertOk;
+
+
+
+
+
 
 
 
