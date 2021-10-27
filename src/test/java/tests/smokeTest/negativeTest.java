@@ -19,7 +19,7 @@ public class negativeTest {
 
     QAConcortPage qaConcortPage;
 
-    @Test(priority = -5)
+    @Test(priority = -5, groups = "birinciGrup")
     public void yanlisSifre(){
         Driver.getDriver().get(ConfigReader.getProperty("CHQAUrl"));
         qaConcortPage=new QAConcortPage();
@@ -30,7 +30,7 @@ public class negativeTest {
         Assert.assertTrue(qaConcortPage.loginFailedYazisi.isDisplayed());
     }
 
-    @Test(dependsOnMethods = "yanlisSifre")
+    @Test(dependsOnMethods = "yanlisSifre", groups = "birinciGrup")
     public void yanlisKullanici(){
         qaConcortPage=new QAConcortPage();
         qaConcortPage.usernameKutusu.clear();

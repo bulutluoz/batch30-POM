@@ -2,9 +2,12 @@
 <suite name="belirli method calistirma">
     <test name="satis fonksiyonlari testi">
         <classes>
-            <class name="tests.day13_POM.C03_Pages">
+            <class name="tests.day13_POM.C01_pages">
                 <methods>
-                    <include name="test"></include>
+                    <exclude name="test"></exclude>
+                    <!-- calistiracagimiz method sayisi az oldugunda include ile istedigimiz kadar secebiliriz -->
+                    <!-- calistirmayacagimiz method sayisi az oldugunda exclude ile istedigimiz kadar secebiliriz -->
+                    <!-- include ve exclude tag'lari istedigimiz kadar alt alta yazilabilir -->
                 </methods>
             </class>
         </classes>

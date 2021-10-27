@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 public class C01_ReadExcel {
-    @Test
+    @Test (groups = "birinciGrup")
     public void test() throws IOException {
 
         // 7. Dosya yolunu bir String degiskene atayalim
