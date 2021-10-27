@@ -1,4 +1,4 @@
-package tests.day15;
+package tests.day15_POM;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;

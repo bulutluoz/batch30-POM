@@ -1,4 +1,4 @@
-package tests.day17;
+package tests.day17_WebTables;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

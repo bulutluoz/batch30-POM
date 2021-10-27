@@ -1,4 +1,4 @@
-package tests.day16;
+package tests.day16_WebTables;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;

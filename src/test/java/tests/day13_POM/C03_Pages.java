@@ -1,4 +1,4 @@
-package tests.day13;
+package tests.day13_POM;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;

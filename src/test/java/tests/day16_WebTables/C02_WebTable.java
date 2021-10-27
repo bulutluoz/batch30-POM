@@ -1,4 +1,4 @@
-package tests.day16;
+package tests.day16_WebTables;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
