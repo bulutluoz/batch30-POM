@@ -20,7 +20,7 @@ public abstract class TestBaseRapor {
     public void setUpTest() {
         extentReports = new ExtentReports();
         //rapor oluştuktan sonra raporunuz nereye eklensin istiyorsanız buraya yazıyorsunuz.
-        String filePath = System.getProperty("user.dir") + "/test-output/Rapor.html";
+        String filePath = System.getProperty("user.dir") + "/raporlar/Rapor.html";
         //oluşturmak istediğimiz raporu (html formatında) başlatıyoruz, filePath ile dosya yolunu belirliyoruz.
         extentHtmlReporter = new ExtentHtmlReporter(filePath);
         extentReports.attachReporter(extentHtmlReporter);
@@ -29,8 +29,8 @@ public abstract class TestBaseRapor {
         extentReports.setSystemInfo("Enviroment","QA");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
         extentReports.setSystemInfo("Automation Engineer", "Mehmet");
-        extentHtmlReporter.config().setDocumentTitle("amazon Arama Testi");
-        extentHtmlReporter.config().setReportName("amazon Arama Automation Reports");
+        extentHtmlReporter.config().setDocumentTitle("window handle testi");
+        extentHtmlReporter.config().setReportName("window handle testi");
     }
 
 
