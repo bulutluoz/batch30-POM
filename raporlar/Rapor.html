@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 28, 2021 08:43:50 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 28, 2021 10:14:29 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -60,7 +60,8 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -103,10 +104,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='33.333%'><span class='strong'>1</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='66.667%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -124,19 +125,19 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>window handle test</span>
-						<span class='test-time'>Oct 28, 2021 08:43:51 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Nutella testi</span>
+						<span class='test-time'>Oct 28, 2021 10:14:30 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Oct 28, 2021 08:43:51 PM</span>
-	<span class='label end-time'>Oct 28, 2021 08:43:56 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+941ms</span>
+	<span class='label start-time'>Oct 28, 2021 10:14:30 PM</span>
+	<span class='label end-time'>Oct 28, 2021 10:14:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+112ms</span>
 </div>
-<div class='test-desc'>yeni sayfada new window yazisini test eder </div>
+<div class='test-desc'>sonuc sayisi 1000 den az olmali </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
 		<thead>
@@ -149,54 +150,106 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>8:43:55 PM</td>
+				<td class='timestamp'>10:14:34 PM</td>
 				<td class='step-details'>
-						istenen adrese gidildi
+						amazon sayfasina gidildi
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>8:43:55 PM</td>
+				<td class='timestamp'>10:14:37 PM</td>
 				<td class='step-details'>
-						linke tiklandi
+						nutella icin arama yapildi
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>8:43:55 PM</td>
+				<td class='timestamp'>10:14:37 PM</td>
 				<td class='step-details'>
-						yeni sayfaya gecildi
+						sonuc yazisi int haline getirildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='pass'>
+				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+				<td class='timestamp'>10:14:37 PM</td>
+				<td class='step-details'>
+						sonuc sayisinin 1000'den az oldugu test edildi
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Samsung testi</span>
+						<span class='test-time'>Oct 28, 2021 10:14:37 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 28, 2021 10:14:37 PM</span>
+	<span class='label end-time'>Oct 28, 2021 10:14:45 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+253ms</span>
+</div>
+<div class='test-desc'>sonuc sayisi 1000 den az olmali </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:14:41 PM</td>
+				<td class='step-details'>
+						amazon sayfasina gidildi
 					
 				</td>
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>8:43:55 PM</td>
+				<td class='timestamp'>10:14:44 PM</td>
 				<td class='step-details'>
-						test edecegimiz yazi locate edildi
+						Samsung icin arama yapildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:14:44 PM</td>
+				<td class='step-details'>
+						sonuc yazisi int haline getirildi
 					
 				</td>
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>8:43:56 PM</td>
+				<td class='timestamp'>10:14:45 PM</td>
 				<td class='step-details'>
-						test
+						test2
 					
 				</td>
 			</tr>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>8:43:56 PM</td>
+				<td class='timestamp'>10:14:45 PM</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertFalse(Assert.java:65)
-	at org.testng.Assert.assertFalse(Assert.java:75)
-	at tests.day19.C02_WindowHandleRaporlu.test(C02_WindowHandleRaporlu.java:25)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at tests.day19.C03_Raporlama.test2(C03_Raporlama.java:66)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -232,7 +285,111 @@
 	</table>
 </div>
 						<ul class='screenshots'>
-							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test20211028084355.png' src='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test20211028084355.png' data-src='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test20211028084355.png'></li>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test220211028101444.png' src='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test220211028101444.png' data-src='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test220211028101444.png'></li>
+						</ul>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>java testi</span>
+						<span class='test-time'>Oct 28, 2021 10:14:46 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 28, 2021 10:14:46 PM</span>
+	<span class='label end-time'>Oct 28, 2021 10:14:54 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+556ms</span>
+</div>
+<div class='test-desc'>ilk urunde java olmali </div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:14:50 PM</td>
+				<td class='step-details'>
+						amazona gidildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:14:51 PM</td>
+				<td class='step-details'>
+						dropdown dan electronics secildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>10:14:54 PM</td>
+				<td class='step-details'>
+						java kelimesi aratildi
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:14:54 PM</td>
+				<td class='step-details'>
+						test3
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>10:14:54 PM</td>
+				<td class='step-details'>
+						<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at tests.day19.C03_Raporlama.test3(C03_Raporlama.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+						<ul class='screenshots'>
+							<li><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test320211028101454.png' src='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test320211028101454.png' data-src='C:\Users\Lenovo\IdeaProjects\com.Batch30POM/raporlar/Screenshots/test320211028101454.png'></li>
 						</ul>
 					</div>
 				</li>
@@ -277,7 +434,7 @@
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
 						<span class='exception-name'>java.lang.AssertionError</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -291,15 +448,55 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 28, 2021 08:43:51 PM</td>
-										<td class='linked' test-id='1'>window handle test</td>
+										<td>Oct 28, 2021 10:14:37 PM</td>
+										<td class='linked' test-id='2'>Samsung testi</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.AssertionError: expected [false] but found [true]
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertFalse(Assert.java:65)
-	at org.testng.Assert.assertFalse(Assert.java:75)
-	at tests.day19.C02_WindowHandleRaporlu.test(C02_WindowHandleRaporlu.java:25)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at tests.day19.C03_Raporlama.test2(C03_Raporlama.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Oct 28, 2021 10:14:46 PM</td>
+										<td class='linked' test-id='3'>java testi</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at tests.day19.C03_Raporlama.test3(C03_Raporlama.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -352,7 +549,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -364,19 +561,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 28, 2021 08:43:50 PM</div>
+					<div class='panel-lead'>Oct 28, 2021 10:14:29 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 28, 2021 08:43:57 PM</div>
+			 		<div class='panel-lead'>Oct 28, 2021 10:14:55 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 6s+92ms</div>
+					<div class='panel-lead'>0h 0m 25s+671ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -411,14 +608,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+                parentCount: 3,
+				passParent: 1,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 2,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -443,7 +640,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "window handle test":4.941
+			        "Nutella testi":7.112,"Samsung testi":7.253,"java testi":8.556
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
