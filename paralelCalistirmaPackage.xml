@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="package paralel calistirma" parallel="tests" thread-count="2">
+    <test name="paralele package1" >
+        <packages>
+            <package name="tests.smokeTest"></package>
+
+        </packages>
+    </test>
+    <test name="paralele package2" >
+        <packages>
+            <package name="tests.day17_WebTables"></package>
+
+        </packages>
+    </test>
+
+
+</suite>

@@ -1,10 +1,16 @@
 package tests.day16_WebTables;
 
+import com.github.javafaker.DateAndTime;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QAConcortPage;
 import utilities.Driver;
+
+import java.sql.Time;
+import java.time.LocalDate;
+import java.util.Date;
 
 public class C02_WebTable {
     @Test
@@ -52,6 +58,7 @@ public class C02_WebTable {
              ) {
             System.out.println(each.getText());
         }
+
 
         Driver.closeDriver();
     }

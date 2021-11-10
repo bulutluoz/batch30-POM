@@ -22,7 +22,7 @@ public class C02_WindowHandleRaporlu extends TestBaseRapor {
         extentTest.info("yeni sayfaya gecildi");
         WebElement newWindowYaziElementi=Driver.getDriver().findElement(By.tagName("h3"));
         extentTest.info("test edecegimiz yazi locate edildi");
-        Assert.assertFalse(newWindowYaziElementi.isDisplayed());
+        Assert.assertTrue(newWindowYaziElementi.isDisplayed());
         extentTest.pass("yazinin gorunur oldugu test edildi");
 
 
