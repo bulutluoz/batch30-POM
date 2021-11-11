@@ -19,7 +19,7 @@ public abstract class TestBaseCross {
     @Parameters("browser")
     @BeforeClass
     public void setup(@Optional String browser){
-        WebDriverManager.chromedriver().setup();
+
         driver=DriverCross.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);

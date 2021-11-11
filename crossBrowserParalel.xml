@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="cross browser">
+<suite name="cross browser" parallel="tests" thread-count="3" verbose="3">
     <test name="cross browser chrome">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
